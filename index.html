@@ -1,0 +1,91 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+
+  <style>
+    input {
+      width: 100%;
+    }
+    input[type=button], input[type=text] {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 16px 32px;
+      font-size: 16px;
+      min-width: 21%;
+      text-decoration: none;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+    input[type=button]:hover, input[type=text]:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+
+<table>
+  <tbody>
+  <tr>
+    <td colspan="4"><input type="text" name="salida" id="salida" value="0" style="text-align: right; width: 80%" readonly ></td>
+  </tr>
+  <tr>
+    <td><input type="button" name="siete" id="siete" onclick="anhadirNumero('7')" value="7"/></td>
+    <td><input type="button" name="ocho" id="ocho" onclick="anhadirNumero('8')" value="8"/></td>
+    <td><input type="button" name="nueve" id="nueve" onclick="anhadirNumero('9')" value="9"/></td>
+    <td><input type="button" name="dividir" id="dividir" onclick="pulsarOperando('·/·')" value="·/·"/></td>
+  </tr>
+  <tr>
+    <td><input type="button" name="cuatro" id="cuatro" onclick="anhadirNumero('4')" value="4"/></td>
+    <td><input type="button" name="cinco" id="cinco" onclick="anhadirNumero('5')" value="5"/></td>
+    <td><input type="button" name="seis" id="seis" onclick="anhadirNumero('6')" value="6"/></td>
+    <td><input type="button" name="multiplicar" id="multlipicar" onclick="pulsarOperando('x')" value="x"/></td>
+  </tr>
+  <tr>
+    <td><input type="button" name="uno" id="uno" onclick="anhadirNumero('1')" value="1"/></td>
+    <td><input type="button" name="dos" id="dos" onclick="anhadirNumero('2')" value="2"/></td>
+    <td><input type="button" name="tress" id="tres" onclick="anhadirNumero('3')" value="3"/></td>
+    <td><input type="button" name="restar" id="restar" onclick="pulsarOperando('-')" value="-"/></td>
+  </tr>
+  <tr>
+  <tr>
+    <td><input type="button" name="borrar" id="borrar" onclick= "limpiarSalida(true)" value="C"/></td>
+    <td><input type="button" name="cero" id="cero" onclick="anhadirNumero('0')" value="0"/></td>
+    <td><input type="button" name="coma" id="coma" onclick="anhadirComa()" value="."/></td>
+    <td><input type="button" name="sumar" id="sumar" onclick="pulsarOperando('+')" value="+"/></td>
+  </tr>
+  </tr>
+  <tr>
+    <td colspan="4"><input type="button" name="igual" id="igual" onclick="calcular(false)" value="="/></td>
+  </tr>
+  </tbody>
+</table>
+
+<body>
+
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+
+</body>
+
+</html>
